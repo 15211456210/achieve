@@ -79,6 +79,10 @@ public class PriorityBlockingQueue<E> implements BlockingQueue<E> {
     public boolean offer(E o) {
         try {
             lock.lock();
+            if (queue.size() == queue.getCapacity()){
+                //队列满了
+                return false;
+            }
             enqueue(o);
             return true;
         } finally {
