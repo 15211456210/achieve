@@ -4,7 +4,6 @@ package com.zcp.util.concurrent;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import static org.junit.Assert.*;
 
 public class ScheduledThreadPoolExecutorTest {
 
